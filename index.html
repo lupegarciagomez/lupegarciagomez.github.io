@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lupe G&oacute;mez</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/font-awesome-animation.css" rel="stylesheet" >
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="pull-right"><i class="glyphicon glyphicon-remove faa-spin animated-hover"></i></a>
+            <li>
+                <a href="#top" onclick="$('#menu-close').click()" class="logo">
+                <span>L.</span>
+                </a>
+            </li>
+            <li>
+                <a href="#top" onclick="$('#menu-close').click()";>HOME</a>
+            </li>
+            <li>
+                <a href="#about" onclick="$('#menu-close').click()";>ABOUT ME</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick="$('#menu-close').click()";>MY WORK</a>
+            </li>
+            <!--         <li>
+            <a href="#portfolio" onclick="$('#menu-close').click();$('#portfolio ul li#construction a').click()";>CONSTRUCTION</a>
+        </li> -->
+            <li>
+                <a href="#contact" onclick="$('#menu-close').click()";>CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>LUPE.</h1>
+            <h3>aspiring architect and engineer</h3>
+        </div>
+    </header>
+
+    <!-- About Me -->
+    <section id="about" class="about">
+        <div class="container valign">
+            <div class="row">
+                <div class="col-md-6 text-left">
+                    <h4><b>ABOUT ME</b></h4>
+                </div>
+                <div class="col-md-6 text-justify">
+                    <p>I am a graduate from Northwestern University. I have a Bachelor's of Science in Civil engineering and an Architectural Engineering and Design Certificate.</p>
+                    <p>I believe architecture and engineering have the agency to empower marginalized communities through urban and spatial intervention.</p>
+                    <p>I intend to one day be a part of the movement that provides equitable housing, combats gentrification, and acknowledges the voices of those whom are affected by our designs.</p>
+                    <p><a href="./Lupe Gomez_Resume.pdf"><i class="glyphicon glyphicon-file"></i> RESUME</a>
+                    </p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Portfolio -->
+
+    <section id="portfolio" class="portfolio">
+        <div class="text-center">
+            <h3>MY WORK</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <ul class="portfolio-sorting list-inline text-center">
+                    <li><a href="#" data-group="all" class="active">everything</a>
+                    </li>
+                    <li id="architecture"><a href="#" data-group="architecture">architecture</a>
+                    </li>
+                    <li id="engineering"><a href="#" data-group="engineering">engineering</a>
+                    </li>
+                    <li id="construction"><a href="#" data-group="construction">construction</a>
+                    </li>
+                </ul>
+                <!--end portfolio sorting -->
+
+                <!-- Portfolio Grid-->
+                <ul class="portfolio-items list-unstyled" id="grid">
+
+                    <!-- Portfolio Items-->
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-groups='["architecture"]'>
+                        <figure class="hovereffect">
+                            <a href="./socialhousing.html">
+                                <img src="./img/thumbnails/socialhousing.jpg" alt="Item 1" class="img-responsive">
+                                <div class="overlay">
+                                    <h4>SOCIAL HOUSING</h4>
+                                </div>
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-groups='["architecture"]'>
+                        <figure class="hovereffect">
+                            <a href="./ca-so.html">
+                                <img src="./img/thumbnails/ca-so.jpg" alt="Item 1" class="img-responsive">
+                                <div class="overlay">
+                                    <h4>CADAVAL &#38 SOL&#192-MORALES</h4>
+                                </div>
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-groups='["engineering"]'>
+                        <figure class="hovereffect">
+                            <a href="./ilek.html">
+                                <img src="./img/thumbnails/ilek.jpg" alt="Item 1" class="img-responsive">
+                                <div class="overlay">
+                                    <h4>ILEK ON ICE</h4>
+                                </div>
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-groups='["architecture"]'>
+                        <figure class="hovereffect">
+                            <a href="./highrise.html">
+                                <img src="./img/thumbnails/highrise.jpg" alt="Item 1" class="img-responsive">
+                                <div class="overlay">
+                                    <h4>MIXED-USE HIGHRISE</h4>
+                                </div>
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-groups='["engineering"]'>
+                        <figure class="hovereffect">
+                            <a href="./steeldesign.html">
+                                <img src="./img/thumbnails/steeldesign.jpg" alt="Item 1" class="img-responsive">
+                                <div class="overlay">
+                                    <h4>STRUCTURAL STEEL DESIGN</h4>
+                                </div>
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-groups='["construction"]'>
+                        <figure class="hovereffect">
+                            <a href="./nicaragua.html">
+                                <img src="./img/thumbnails/nicaragua.jpg" alt="Item 1" class="img-responsive">
+                                <div class="overlay">
+                                    <h4>BRIGADE IN NICARAGUA</h4>
+                                </div>
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-groups='["engineering"]'>
+                        <figure class="hovereffect">
+                            <a href="./concretedesign.html">
+                                <img src="./img/thumbnails/concretedesign.jpg" alt="Item 1" class="img-responsive">
+                                <div class="overlay">
+                                    <h4>REINFORCED CONCRETE DESIGN</h4>
+                                </div>
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-groups='["architecture"]'>
+                        <figure class="hovereffect">
+                            <a href="./elementary.html">
+                                <img src="./img/thumbnails/elementary.jpg" alt="Item 1" class="img-responsive">
+                                <div class="overlay">
+                                    <h4>ELEMENTARY SCHOOL</h4>
+                                </div>
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-groups='["architecture"]'>
+                        <figure class="hovereffect">
+                            <a href="./residence.html">
+                                <img src="./img/thumbnails/residence.jpg" alt="Item 1" class="img-responsive">
+                                <div class="overlay">
+                                    <h4>RESIDENCE</h4>
+                                </div>
+                            </a>
+                        </figure>
+                    </li>
+
+
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-groups='["construction"]'>
+                        <figure class="hovereffect">
+                            <a href="./gilbane.html">
+                                <img src="./img/thumbnails/gilbane.jpg" alt="Item 1" class="img-responsive">
+                                <div class="overlay">
+                                    <h4>GILBANE BUILDING COMPANY</h4>
+                                </div>
+                            </a>
+                        </figure>
+                    </li>
+
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-groups='["construction"]'>
+                        <figure class="hovereffect">
+                            <a href="./panama.html">
+                                <img src="./img/thumbnails/panama.jpg" alt="Item 1" class="img-responsive">
+                                <div class="overlay">
+                                    <h4>BRIGADE IN PANAMA</h4>
+                                </div>
+                            </a>
+                        </figure>
+                    </li>
+                    <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12"></li>
+                    <!-- sizer -->
+                </ul>
+                <!--end portfolio grid -->
+            </div>
+            <!--end row -->
+        </div>
+        <!-- end container-->
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container valign">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h1>CONTACT ME.</h1>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="mailto:lupe@u.northwestern.edu"><i class="glyphicon glyphicon-envelope faa-horizontal animated-hover"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="sticky-footer-home">
+        <div class="container">
+            <p class="text-muted text-center">Copyright &copy; Lupe G&oacute;mez 2016</p>
+        </div>
+    </footer>
+
+        <footer class="scroll-downn">
+        <div class="container">
+            <p class="text-center"><a href="#about"><i class="fa fa-chevron-circle-down faa-bounce animated fa-3x"></i></a></p>
+        </div>
+        </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.shuffle.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    var shuffleme = (function($) {
+        'use strict';
+        var $grid = $('#grid'), //locate what we want to sort 
+            $filterOptions = $('.portfolio-sorting li'), //locate the filter categories
+            $sizer = $grid.find('.shuffle_sizer'), //sizer stores the size of the items
+            init = function() {
+                // None of these need to be executed synchronously
+                setTimeout(function() {
+                    listen();
+                    setupFilters();
+                }, 100);
+                // instantiate the plugin
+                $grid.shuffle({
+                    itemSelector: '[class*="col-"]',
+                    sizer: $sizer
+                });
+            },
+            // Set up button clicks
+            setupFilters = function() {
+                var $btns = $filterOptions.children();
+                $btns.on('click', function(e) {
+                    e.preventDefault();
+                    var $this = $(this),
+                        isActive = $this.hasClass('active'),
+                        group = isActive ? 'all' : $this.data('group');
+                    // Hide current label, show current label in title
+                    if (!isActive) {
+                        $('.portfolio-sorting li a').removeClass('active');
+                    }
+                    $this.toggleClass('active');
+                    // Filter elements
+                    $grid.shuffle('shuffle', group);
+                });
+                $btns = null;
+            },
+            // Re layout shuffle when images load. This is only needed
+            // below 768 pixels because the .picture-item height is auto and therefore
+            // the height of the picture-item is dependent on the image
+            // I recommend using imagesloaded to determine when an image is loaded
+            // but that doesn't support IE7
+            listen = function() {
+                var debouncedLayout = $.throttle(300, function() {
+                    $grid.shuffle('update');
+                });
+                // Get all images inside shuffle
+                $grid.find('img').each(function() {
+                    var proxyImage;
+                    // Image already loaded
+                    if (this.complete && this.naturalWidth !== undefined) {
+                        return;
+                    }
+                    // If none of the checks above matched, simulate loading on detached element.
+                    proxyImage = new Image();
+                    $(proxyImage).on('load', function() {
+                        $(this).off('load');
+                        debouncedLayout();
+                    });
+                    proxyImage.src = this.src;
+                });
+                // Because this method doesn't seem to be perfect.
+                setTimeout(function() {
+                    debouncedLayout();
+                }, 500);
+            };
+        return {
+            init: init
+        };
+    }(jQuery));
+    $(document).ready(function() {
+        shuffleme.init(); //filter portfolio
+    });
+    </script>
+
+</body>
+
+</html>
