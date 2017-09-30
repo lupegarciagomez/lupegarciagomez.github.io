@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Lupe G&oacute;mez | Water Enterprise Trade Zone</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"> 
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="pull-right"><i class="glyphicon glyphicon-remove faa-spin animated-hover"></i></a>
+            <li>
+                <a href="index.html" onclick="$('#menu-close').click()" class="logo">
+                <span>L.</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html" onclick="$('#menu-close').click()";>HOME</a>
+            </li>
+            <li>
+                <a href="index.html#about" onclick="$('#menu-close').click()";>ABOUT ME</a>
+            </li>
+            <li>
+                <a href="index.html#portfolio" onclick="$('#menu-close').click()";>MY WORK</a>
+            </li>
+            <!--         <li>
+            <a href="#portfolio" onclick="$('#menu-close').click();$('#portfolio ul li#construction a').click()";>CONSTRUCTION</a>
+        </li> -->
+            <li>
+                <a href="index.html#contact" onclick="$('#menu-close').click()";>CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Info -->
+    <section class="project-page">
+        <div class="container">
+            <div class="row">
+                <!-- Project Content -->
+                <div class="project-visual col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div id="prev" class="glyphicon glyphicon-menu-up"></div>
+                    <div id="next" class="glyphicon glyphicon-menu-down"></div>
+                    <div class="cycle-slideshow" data-cycle-fx="scrollVert" data-cycle-timeout="0" data-cycle-center-horz="true" data-cycle-center-vert="true" data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-slides="> a">
+                        <a href="./img/wetzone/title.jpg" data-lightbox="wetzone"><img src="./img/wetzone/title.jpg"> </a>
+                        <a href="./img/wetzone/1.jpg" data-lightbox="wetzone"><img src="./img/wetzone/1.jpg"> </a>
+                        <a href="./img/wetzone/2.jpg" data-lightbox="wetzone"><img src="./img/wetzone/2.jpg"> </a>
+                        <a href="./img/wetzone/3.jpg" data-lightbox="wetzone"><img src="./img/wetzone/3.jpg"> </a>
+                        <a href="./img/wetzone/4.jpg" data-lightbox="wetzone"><img src="./img/wetzone/4.jpg"> </a>
+                        <a href="./img/wetzone/5.jpg" data-lightbox="wetzone"><img src="./img/wetzone/5.jpg"> </a>
+                        <a href="./img/wetzone/6.jpg" data-lightbox="wetzone"><img src="./img/wetzone/6.jpg"> </a>
+                    </div>
+                </div>
+                <div class="project-description col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div>
+                        <h3>WATER ENTERPRISE TRADE ZONE</h3>
+                        <p><b>Project Location:</b> South Chicago</p>
+                        <p><b>Project Completed:</b> June 2016</p>
+                        <p><b>School:</b> Northwestern University</p>
+                        <p><b>Course:</b> Senior Capstone Design</p>
+                        <p><b>Instructors:</b> Charles Dowding, David Corr, Harish Rao</p>
+                        <p><b>Collaborators:</b> various Northwestern students</p>
+                        <p>The project requires the design of a Water Enterprise Trade Zone with Ford Motor Company facilities near the Metropolitan Wastewater Reclamation District of Chicago (MWRD) in order to maximize the use of effluent water in water-intensive industrial and manufacturing processes. As the architect of the project, I designed five facilities and the WET Zone site with consideration for recreational areas, mobility, and sustainability. The full report of the project can be found <a href="./wetzone report.pdf">here</a>.</p>
+                        <p><a href="index.html#portfolio"><i class="glyphicon glyphicon-th"></i></a>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="sticky-footer">
+        <div class="container">
+            <p class="text-muted text-center">Copyright &copy; Lupe G&oacute;mez 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.shuffle.min.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
+    <script src="js/jquery.cycle2.center.min.js"></script>
+    <script src="js/jquery.cycle2.scrollVert.min.js"></script>
+    <script src="js/lightbox.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+        // Closes the sidebar menu
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        // Opens the sidebar menu
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        lightbox.option({
+            'wrapAround': true,
+            'fitImagesInViewport': true,
+            'showImageNumberLabel': false,
+        })
+        // Scrolls to the selected menu item on the page
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        $(document.documentElement).keyup(function(e) {
+            if (e.keyCode == 40) {
+                $('.cycle-slideshow').cycle('next');
+            }
+            if (e.keyCode == 38) {
+                $('.cycle-slideshow').cycle('prev');
+            }
+        });
+        window.addEventListener("keydown", function(e) {
+        // space and arrow keys
+        if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+            e.preventDefault();
+        }
+        }, false);
+    </script>
+</body>
+</html>
